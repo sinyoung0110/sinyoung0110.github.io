@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        @import
+        url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+    </style>
+    <style>
+         @keyframes textColorAnimation {
+            0%{
+                color: rgb(250, 228, 117);
+            }
+            40%{
+                color: rgb(246, 173, 173);
+            }
+            100% {
+                color: rgb(255, 174, 0);
+            }
+        }
+        *{
+            font-family: 'Jua', sans-serif;
+        }
+        h2{
+            animation-name: textColorAnimation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        .clear{
+            clear: both;
+        }
+        a{
+            text-decoration:none;
+            color: rgb(122, 86, 37);
+        }
+        a:hover{
+            background-color: rgb(252, 192, 114);
+            font-weight: bold;
+        }
+        li{
+            list-style-type: none;
+        }
+        header{
+            width: 98%;
+            height: 280px;
+            margin-top: 40px;
+            margin-left: 10px;
+            border: solid 3px rgb(255, 229, 195);
+            background-color:rgb(255, 229, 195);
+            background: linear-gradient(to top, white,rgb(252, 192, 114));
+        }
+        #top{
+            float: right;
+            margin-top: -35px;
+            margin-right: 15px;
+            
+            font-size: 15px;
+            color:rgb(160, 103, 27);
+            border: solid 3px rgb(255, 229, 195);
+        }
+        #logo0{
+            float: left;
+            font-size: 15px;
+            color:gray;
+        }
+        #logo{
+            padding-top: 100px;
+            padding-left: 50px;
+            font-size: 150px;
+            color:#ffba3b;
+            text-shadow: 10px 10px 30px;
+            animation-name: textColorAnimation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        #logo5{
+            float: right;
+        }
+        nav{
+            width: 98%;
+            height: 70px;
+            margin-top: 10px;
+            margin-left: 10px;
+            padding-top: 10px;
+            border: solid 3px rgb(255, 229, 195);
+            background-color: #ffba3b;
+            
+        }
+        nav li{
+            display: inline;
+            margin: 10px 200px;
+            color:aliceblue;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        section{
+            float: left;
+            width: 33%;
+            height: 480px;
+            margin-top: 10px;
+            margin-left: 10px;
+            border: solid 3px rgb(255, 229, 195);
+        }
+        section li{
+            font-size:35px;
+            border-bottom: dashed 3px rgb(255, 229, 195);
+        }
+        section2{
+            float: left;
+            width: 34%;
+            height: 480px;
+            margin-top: 10px;
+            border: solid 3px rgb(255, 229, 195);
+        }
+        section2 li{
+            font-size:35px;
+            border-bottom: dashed 3px rgb(255, 229, 195);
+        }
+        section3{
+            float: right;
+            width: 30%;
+            height: 480px;
+            margin-top: 10px;
+            margin-right: 10px;
+            border: solid 3px rgb(255, 229, 195);
+        }
+        footer{
+            color:rgb(160, 103, 27);
+            font-size: 10px;
+            padding-bottom: 10;
+            margin-bottom: 10;
+            text-align: center;
+
+        }
+        h3{
+            font-size: 22px;
+            text-align: center;
+        }
+        #l1{
+        transition: all 0.2s linear;
+        }
+        #l1:hover{
+        transform: scale(1.4);
+        }
+        #l2{
+        transition: all 0.2s linear;
+        }
+        #l2:hover{
+        transform: scale(1.4);
+        }
+        #l3{
+        transition: all 0.2s linear;
+        }
+        #l3:hover{
+        transform: scale(1.4);
+        }
+        #l4{
+        transition: all 0.2s linear;
+        }
+        #l4:hover{
+        transform: scale(1.4);
+        }
+        #l5{
+            float:right;
+        }
+        #l6{
+            float:right;
+            margin-top: 40px;
+        }
+        span{
+            transition:font-size 1s;
+        }
+        span:hover{
+            font-size: 150%;
+        }
+        .cheese{
+            background-image: url(images/cheese.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: dashed 3px rgb(255, 229, 195);
+        }
+        .g{
+          font-size: 15px;
+          color: #a7a7a7;  
+          margin-bottom: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div id="top"><a href="logein.html"><span>로그인 | 회원가입</span></a></div>
+    <header>
+        <div id="logo0">
+            <ul>
+                <li>방문자 수:58</li>
+                <li>새 글 수:3</li>
+                <li>가입자 수:12</li>
+            </ul>
+        </div>
+        <img src="images/logo5.jpg" id= logo5 width="500" height="280">
+        <div id="logo">
+            Cheeze
+        </div>
+    </header>
+    <nav><ul>
+        <li><a href="page2.html"><span>게시판</span></a></li>
+        <li><a href="myframe2.html"><span>전체글</span></a></li>
+        <li><a href="myframe.html"><span>이미지</span></a></li>
+    </ul>
+    </nav> 
+    <section>
+        <a href="page2.html">
+        <div class="cheese"><h3><span>공지사항</span></h3></a></div>
+        <ul>
+            <li>치즈의 이번 달 일정</li>
+            <li>카페회칙</li>
+            <li>팬아트</li>
+            <li><a href="https://www.instagram.com/p/CeYO9CvPhWn/?igshid=YmMyMTA2M2Y=" target="_blank"> 치즈 인스타그램</a></li>
+        </ul>
+        <img src="images/section2.jpg" id="l5" height="150">
+    </section>
+    <section2>
+        <div class="cheese"><a href="page3.html"><h3><span>전체글 목록</span></h3></a></div>
+        <ul>
+            <li>고슴도치<label class="g">치즈낙서장 | 치짱... | 21.07.16 | 97</label></li>
+            <li>허망한 치즈 <label class="g">치즈낙서장 | 귀여... | 22.06.10 | 115</label></li>
+            <li>할 말이 있는 치즈 <label class="g">치즈낙서장 | 원소... | 21.11.27 | 107</label></li>
+            <li>파워 먹방 <label class="g">치즈낙서장 | 주먹... | 19.04.17 | 225</label></li>
+        </ul>
+        <img src="images/section2.jpg" id="l5" height="150">
+   </section2>
+    <section3>
+        <div class="cheese"><a href="myframe.html"><h3><span>치즈의 갤러리</span></h3></a></div>
+        
+        <img src="images/logo1.jpg" id="l1" height="180">
+        <img src="images/logo2.jpg" id="l2" height="180">
+        <img src="images/logo4.jpg" id="l3" height="180">
+        <img src="images/logo3.jpg" id="l4" height="180">
+        <img src="images/section2.jpg" id="l6" height="150">
+    </section3>
+    <div class="clear"></div>
+    <footer>
+        <div><a href="#top">맨 위로</a></div>
+        <div>카페 운영자: 김신영 | 연락처: 010-5043-7118</div>
+    </footer>
+</body>
+</html>

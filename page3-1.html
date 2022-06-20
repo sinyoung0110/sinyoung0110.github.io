@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        @import
+        url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+    </style>
+    <style>
+        *{
+            font-family: 'Jua', sans-serif;
+        }
+        header{
+            border: solid 3px rgb(255, 229, 195);
+            background-color: rgb(255, 229, 195);
+        }
+        nav{
+            border: solid 3px rgb(255, 229, 195);
+            margin-top: -50px;
+        }
+        h1{
+            padding-top: 0px;
+            padding-left: 50px;
+            font-size: 70px;
+            color:#ffba3b;
+            text-shadow: 10px 10px 30px;
+        }
+        ._box{
+            width: 98%;
+            height: 100px;
+            margin: 1px;
+            margin-top: 15px;
+            margin-bottom: -15px;
+            color:rgb(122, 86, 37);
+            font-size: 35px;
+            font-weight: bolder;
+        }
+        p{
+          font-size: 15px;
+          color: #a7a7a7;  
+          margin-bottom: 70px;
+          float: right;
+        }
+        img{
+            height: 450px;
+        }
+        a{
+            float: right;
+            margin-right: -220px;
+            margin-top: -20px;
+            text-decoration:none;
+            color: rgb(122, 86, 37);
+        }
+        a:hover{
+            color: white;
+            font-weight: bold;
+        }
+        form{
+            margin-top: 110px;
+        }
+        legend{
+            color:rgb(122, 86, 37);
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        @keyframes bomb{
+            from{
+                font-size: 0%;
+                color: white;
+            }
+            to{
+                font-size: 100%;
+                color: rgb(122, 86, 37);
+            }
+        }
+        span{
+            animation-name: bomb;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+        span1{
+            animation-name: bomb;
+            animation-duration: 6s;
+            animation-iteration-count: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>비교짤</h1>
+    <p>치즈낙서장 | 원소... | 22.06.10 | 125</p>
+    <a href="page3.html">목록</a>
+    </header>
+    <section>
+        <div class="_box"><span>나를 바라볼때 시선</span> <span1>&nbsp; &nbsp; &nbsp; &nbsp;         남을 볼때 시선</span></div>
+        <span><img src="images/pho11-1.jpg"></span><img src="images/pho11-2.jpg">
+    </section>
+    
+    <form>
+        <hr>
+        <legend>댓글</legend>
+        <textarea cols="120" rows="10">
+        </textarea>
+        <input type="button" value="등록">
+    </form>
+</body>
+</html>

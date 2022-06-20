@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        @import
+        url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+    </style>
+    <style>
+        *{
+            font-family: 'Jua', sans-serif;
+        }
+        a{
+            text-decoration:none;
+            color:#ffba3b;
+            text-shadow: 10px 10px 30px;
+        }
+        fieldset{
+            width: 50px;
+            background-color: #ffba3b;
+            margin: 15px;
+        }
+        legend{
+            background-color: rgb(255, 229, 195);
+            border: solid 5px rgb(255, 229, 195);
+            border-radius: 100px 100px;
+            
+        }
+        span{
+            border-bottom: dashed 4px rgb(255, 229, 195);
+            font-size: 35px;
+        }
+        input{
+            margin-left: 15px;
+        }
+        #logo{
+            padding-top: 0px;
+            padding-left: 0px;
+            font-size: 50px;
+            color:#ffba3b;
+            text-shadow: 10px 10px 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="logo"><a href="index.html">cheeze paper</a></div>
+    <br>
+    <span>로그인하기</span>
+    <form>
+        <fieldset>
+            <legend>로그인 하기</legend>
+            <table border="0" width="400">
+            <tr>
+                <td> 아이디</td>
+                <td> <input type="text"></td>
+            </tr>
+            <tr>
+                <td> 비밀번호</td>
+                <td> <input type="password"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <a href="homepage.html"><input type="submit" value="로그인 하기"></a>
+    </form>
+<br>
+<span>    <br>   회원가입하기</span>
+
+    <form>
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <table border="0" width="400">
+                <tr>
+                    <td> 아이디</td>
+                    <td> <input type="text"></td>
+                </tr>
+                <tr>
+                    <td> 비밀번호</td>
+                    <td> <input type="password"></td>
+                </tr>
+                <tr>
+                    <td> 비밀번호 확인</td>
+                    <td> <input type="password"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <p></p>
+        <fieldset>
+            <legend>개인정보</legend>
+            <table border="0" width="400">
+                <tr>
+                    <td> 이름</td>
+                    <td> <input type="text"></td>
+                </tr>
+                <tr>
+                    <td> 메일주소</td>
+                    <td> <input type="email"></td>
+                </tr>
+                <tr>
+                    <td> 연락처</td>
+                    <td> <input type="tel"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <a href="homepage.html"><input type="submit" value="가입하기"></a> 
+    </form>
+</body>
+</html>
