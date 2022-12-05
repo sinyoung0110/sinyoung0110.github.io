@@ -5,26 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        header{
+          nav{
+            width: 50%;
+            height: 40px;
+            margin-top: -110px;
+            margin-left: 280px;
+            margin-bottom: 80px;
+            padding-top: 10px;
             border: solid 3px rgb(255, 229, 195);
         }
-        h1{
-            padding-top: 0px;
-            padding-left: 50px;
-            font-size: 70px;
-            color:#ffba3b;
-            text-shadow: 10px 10px 30px;
+        nav li{
+            display: inline;
+            color:aliceblue;
+            font-weight: bold;
+        }
+        a{
+            text-decoration:none;
+            color: rgb(122, 86, 37);
+        }
+        section{
+            text-align: center;
+            background-color: rgb(251, 246, 240);
+        }
+        .container{
+            width:300vw;
+            transition: transform 0.5s;
+            
+        }
+        .inner{
+            width:100vw;
+            float:left;
+        }
+        .inner img{
+            height: 500px;
         }
     </style>
+    <script>
+        window.onload=function(){
+        document.querySelector('.버튼2').addEventListener('click', function(){
+            document.querySelector('.container').style.transform='translate(-100vw)';
+        })
+        document.querySelector('.버튼3').addEventListener('click', function(){
+            document.querySelector('.container').style.transform='translate(-200vw)';
+        })
+        document.querySelector('.버튼1').addEventListener('click', function(){
+            document.querySelector('.container').style.transform='translate(0vw)';
+        })
+    }
+    </script>
 </head>
 <body>
     <header>
         <h1>게시판</h1>
-        <div><a href="index.html">홈</a> 
-            <a href="page3.html">전체글</a> 
-            <a href="page4.html">이미지</a>
-       </div>
-        </header>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" target="_blank">홈</a></li>
+            <li><a href="page3.html">전체글</a></li>
+            <li><a href="page4.html">이미지</a></li>
+        </ul>
+    </nav>
+    <section>
+    <div style="overflow: hidden">
+        <div class="container">
+        <div class="inner">
+            <img src="images/pho4.jpg">
+        </div>
+        <div class="inner">
+            <img src="images/pho5.jpg">
+        </div>
+        <div class="inner">
+            <img src="images/pho6.jpg">
+        </div>
+        
+        </div>
+    </div>
+    <button class="버튼1">1</button>
+    <button class="버튼2">2</button>
+    <button class="버튼3">3</button>
+</section>
+
 </body>
 </html>

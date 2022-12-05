@@ -1,0 +1,16 @@
+@import
+        url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+*{
+    font-family: 'Jua', sans-serif;
+}
+header{
+    border: solid 3px rgb(255, 229, 195);
+    background-color: rgb(255, 229, 195);
+}
+h1{
+    padding-top: 0px;
+    padding-left: 50px;
+    font-size: 70px;
+    color:#ffba3b;
+    text-shadow: 10px 10px 30px;
+}

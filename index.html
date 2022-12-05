@@ -5,13 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-    <style>
-        @import
-        url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
-    </style>
+    <link rel="stylesheet" href="style.css">
     <style>
          @keyframes textColorAnimation {
             0%{
@@ -23,9 +17,6 @@
             100% {
                 color: rgb(255, 174, 0);
             }
-        }
-        *{
-            font-family: 'Jua', sans-serif;
         }
         h2{
             animation-name: textColorAnimation;
@@ -166,12 +157,9 @@
         #l4:hover{
         transform: scale(1.4);
         }
-        #l5{
+        .image{
             float:right;
-        }
-        #l6{
-            float:right;
-            margin-top: 40px;
+            height:150px;
         }
         span{
             transition:font-size 1s;
@@ -191,6 +179,13 @@
           margin-bottom: 70px;
         }
     </style>
+    <script>
+        window.onload=function(){
+            const image1=document.getElementById('image');
+            image.src="images/section2.jpg";
+            image.height=150;
+        };
+    </script>
 </head>
 <body>
     <div id="top"><a href="logein.html"><span>로그인 | 회원가입</span></a></div>
@@ -208,7 +203,7 @@
         </div>
     </header>
     <nav><ul>
-        <li><a href="page2.html"><span>게시판</span></a></li>
+        <li><a href="myframe3.html"><span>게시판</span></a></li>
         <li><a href="myframe2.html"><span>전체글</span></a></li>
         <li><a href="myframe.html"><span>이미지</span></a></li>
     </ul>
@@ -219,10 +214,10 @@
         <ul>
             <li>치즈의 이번 달 일정</li>
             <li>카페회칙</li>
-            <li>팬아트</li>
+            <li><a href="page4_3.html">팬아트</a></li>
             <li><a href="https://www.instagram.com/p/CeYO9CvPhWn/?igshid=YmMyMTA2M2Y=" target="_blank"> 치즈 인스타그램</a></li>
         </ul>
-        <img src="images/section2.jpg" id="l5" height="150">
+        <img class="image" id="image">
     </section>
     <section2>
         <div class="cheese"><a href="page3.html"><h3><span>전체글 목록</span></h3></a></div>
@@ -232,7 +227,7 @@
             <li>할 말이 있는 치즈 <label class="g">치즈낙서장 | 원소... | 21.11.27 | 107</label></li>
             <li>파워 먹방 <label class="g">치즈낙서장 | 주먹... | 19.04.17 | 225</label></li>
         </ul>
-        <img src="images/section2.jpg" id="l5" height="150">
+        <img src="images/section2.jpg" class="image">
    </section2>
     <section3>
         <div class="cheese"><a href="myframe.html"><h3><span>치즈의 갤러리</span></h3></a></div>
@@ -241,9 +236,9 @@
         <img src="images/logo2.jpg" id="l2" height="180">
         <img src="images/logo4.jpg" id="l3" height="180">
         <img src="images/logo3.jpg" id="l4" height="180">
-        <img src="images/section2.jpg" id="l6" height="150">
+        <img src="images/section2.jpg" class="image">
     </section3>
-    <div class="clear"></div>
+    <div></div>
     <footer>
         <div><a href="#top">맨 위로</a></div>
         <div>카페 운영자: 김신영 | 연락처: 010-5043-7118</div>

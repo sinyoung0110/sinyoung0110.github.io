@@ -5,17 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <style>
-        @import
-        url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
-    </style>
-    <style>
-        *{
-            font-family: 'Jua', sans-serif;
-        }
         a{
             text-decoration:none;
             color:#ffba3b;
@@ -47,6 +38,19 @@
             text-shadow: 10px 10px 30px;
         }
     </style>
+    <script>
+        //인라인 이벤트 모델
+        function buttonClick(){
+            alert('로그인했습니다.');
+        }
+        //고전 이벤트 모델
+       window.onload=function(){
+        const button=document.getElementById('button');
+        button.onclick=function(){
+            alert('회원가입되었습니다.');
+        }
+       }
+    </script>
 </head>
 <body>
     <div id="logo"><a href="index.html">cheeze paper</a></div>
@@ -66,7 +70,7 @@
             </tr>
         </table>
     </fieldset>
-    <a href="homepage.html"><input type="submit" value="로그인 하기"></a>
+    <button onclick="buttonClick()"><a href="index.html">로그인</a></button>
     </form>
 <br>
 <span>    <br>   회원가입하기</span>
@@ -107,7 +111,9 @@
                 </tr>
             </table>
         </fieldset>
-        <a href="homepage.html"><input type="submit" value="가입하기"></a> 
+        <button id="button">회원가입</button>
     </form>
+    <br>
+    <br>
 </body>
 </html>
