@@ -64,6 +64,17 @@
             background-color:antiquewhite;
         }
     </style>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#s1").click(function(){
+                $("#s1").fadeIn(1000);
+            });
+            $("#big1").click(function(){
+                $("#big1").fadeOut(1000);
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -86,9 +97,9 @@
     </ul>
     </nav1>
     <div><a href="#top">top</a></div>
-    <section>
-        <img src="images/art1.jpg">
-        <img src="images/art2.jpg">
+    <section id="gallery">
+        <img src="images/art1.jpg" id="s1">
+        <img src="images/art2.jpg" id="big1">
         <img src="images/art3.jpg">
         <img src="images/art4.jpg">
         <img src="images/art5.jpg">

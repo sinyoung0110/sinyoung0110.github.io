@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .big{
+            display:none;
+            width: 350px;
+            height: 350px;
+        }
+        input{
+            width: 150px;
+            height: 30px;
+            border: 1px solid #ccc;
+            margin: 10px 15px;
+        }
+        img{
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("#btn1").click(function(){
+                $("#big1").slideToggle(1000);
+            });
+            $("#btn2").click(function(){
+                $("#big2").slideToggle(1000);
+            });
+            $("#btn3").click(function(){
+                $("#big3").slideToggle(1000);
+            });
+            $("#btn4").click(function(){
+                $("#big4").slideToggle(1000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <table border="1" cellspacing="0">
+        <tr>
+            <td><img src="images/logo1.jpg"></td>
+            <td><img src="images/logo2.jpg"></td>
+            <td><img src="images/logo3.jpg"></td>
+            <td><img src="images/logo4.jpg"></td>
+        </tr>
+        <tr><td><input id="btn1" value="큰 이미지로 보기/닫기"></td>
+            <td><input id="btn2" value="큰 이미지로 보기/닫기"></td>
+            <td><input id="btn3" value="큰 이미지로 보기/닫기"></td>
+            <td><input id="btn4" value="큰 이미지로 보기/닫기"></td>
+        </tr>
+        <tr>
+            <td><img src="images/logo1.jpg" id="big1" class="big"></td>
+            <td><img src="images/logo2.jpg" id="big2" class="big"></td>
+            <td><img src="images/logo3.jpg" id="big3" class="big"></td>
+            <td><img src="images/logo4.jpg" id="big4" class="big"></td>
+        </tr>
+    </table>
+</body>
+</html>

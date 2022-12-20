@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        .slide{
+            width:210px;
+            border:2px solid beige;
+            box-shadow: 2px 2px 3px beige;
+            float: left;
+            margin-top: 30px;
+            margin-right: 20px;
+        }
+
+    </style>
+    <script>
+        $(document).ready(function (){
+            $('#sup').click(function(){
+                $('slide').slideUp(3000);
+            });
+            $('#sdown').click(function(){
+                $('slide').slideDown(3000);
+            });
+            $('#stoggle').click(function(){
+                $('slide').slideToggle(3000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <form>
+        <input type="button" id="sup" value="slideUp">
+        <input type="button" id="sdown" value="slideDown">
+        <input type="button" id="stoggle" value="slideToggle">
+    </form>
+    <img src="images/pho14-1.jpg" class="slide" width="200">
+    <img src="images/pho14-2.jpg" class="slide" width="200">
+    <img src="images/pho14-3.jpg" class="slide" width="200">
+    <p class="slide" width="200" height="140">
+        졸음에 무너져가는 치즈
+    </p>
+</body>
+</html>

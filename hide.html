@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("img").click(function (){
+                $("img").hide("fast");
+                $("#gallery").css("background-color","rgb(255, 229, 195)");
+            });
+        });
+    </script>
+    <script>
+         $(document).ready(function (){
+            $("#btn1").click(function (){
+                $("figure").hide(1000);
+                $("#gallery").css("border","none");
+            });
+            $("#btn2").click(function (){
+                $("figure").show(1000);
+                $("#gallery").css({
+                    "border":"2px dashed antiquewhite",
+                    "border-radius":"10px"
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="btn1">hide</button>
+    <button id="btn2">show</button>
+    <div id="gallery">
+        <figure>
+            <img src="images/pho3.jpg" width="500">
+            <figcaption><b>귀여운 치즈</b>
+            화사하게 피어난 치즈의 미모
+            </figcaption>
+        </figure>
+    </div>
+</body>
+</html>
