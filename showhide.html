@@ -6,13 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        div{
-            width: 200px;
-            height: 150px;
-            border:2px solid black;
-        }
-    </style>
     <script src="jquery.js"></script>
     <script>
         $(document).ready(function (){
@@ -26,7 +19,6 @@
                 $('.special').toggle();
             });
         });
-
     </script>
 </head>
 <body>
@@ -35,8 +27,6 @@
         <input type="button" id="show" value="show">
         <input type="button" id="toggle" value="toggle">
     </form>
-    <div class="special">
-        <img src="images/selfcamera.jpg" alt="셀카" height="200">
-    </div>
+    <img src="images/selfcamera.jpg" alt="셀카" height="200" class="special">
 </body>
 </html>
