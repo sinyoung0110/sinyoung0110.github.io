@@ -186,6 +186,22 @@
             image.height=150;
         };
     </script>
+    <script>
+        window.onload=function(){
+            setTimeout(function(){
+                alert("치즈 닷컴에 오신 것을 환영합니다!!");
+            },1000);
+            let timer=setInterval(function(){
+                for(let i=1; i<60; i++){
+                    alert("치즈를 감상한지"+i+"분 지났습니다.");
+                }
+            },60000);
+            setTimeout(function(){
+                alert("경과시간이 되었습니다, 재로그인해주세요");
+                clearInterval(timer);
+            },61000);
+        }
+    </script>
 </head>
 <body>
     <div id="top"><a href="logein.html"><span>로그인 | 회원가입</span></a></div>
