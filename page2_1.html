@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.onload=function(){
+            const boxs=document.querySelectorAll('.box');
+            for(let i=0; i<boxs.length; i++){
+                const box=boxs[i];
+                box.style.height= '150px';
+                box.style.width  = '98%';
+                box.style.border  = 'solid 2px #ffba3b';
+                box.style.color='rgb(122, 86, 37)';
+                box.style.fontSize='35px';
+                box.style.fontWeight= 'bolder';
+                if(i%2==0){
+                    box.style.background='rgb(255, 229, 195)';
+                }
+                else{
+                    box.style.background='white';
+                }
+            }
+        };
+        function button(){
+            alert('아직 열람가능 전 입니다.');
+        }
+    </script>
+
+</head>
+<body>
+    <section>
+        <div class="box">회원모집<button onclick="button()">열람</button><p>치즈낙서장 | 원소... | 20.11.02 | 75</p></div>
+        <div class="box">카페회칙<button onclick="button()">열람</button><p>치즈낙서장 | 원소... | 20.11.02 | 75</p></div>
+        <div class="box">귀여운 치즈<button onclick="button()">열람</button><p>치즈낙서장 | 원소... | 20.11.02 | 75</p></div>
+        <div class="box">그만하고 싶다<button onclick="button()">열람</button><p>치즈낙서장 | 원소... | 20.11.02 | 75</p></div>
+        <div class="box">눈 아파요<button onclick="button()">열람</button><p>치즈낙서장 | 원소... | 20.11.02 | 75</p></div>
+    <section>
+</body>
+</html>

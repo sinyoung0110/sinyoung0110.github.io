@@ -52,38 +52,9 @@
         })
         document.querySelector('.버튼1').addEventListener('click', function(){
             document.querySelector('.container').style.transform='translate(0vw)';
-        })
+        })      
     }
     </script>
-    <script>
-        window.onload=function(){
-            const boxs=document.querySelectorAll('.box');
-            const ps=document.querySelectorAll('p');
-            for(let i=0; i<boxs.length; i++){
-                const box=boxs[i];
-                box.style.height= '150px';
-                box.style.width  = '88%';
-                box.style.border  = 'solid 2px #ffba3b';
-                box.style.margin= 'auto';
-                box.style.color='rgb(122, 86, 37)';
-                box.style.fontSize='35px';
-                box.style.fontWeight= 'bolder';
-                if(i%2==0){
-                    box.style.background='rgb(255, 229, 195)';
-                }
-                else{
-                    box.style.background='white';
-                }
-                
-            }
-        };
-    </script>
-    <script>
-        function button(){
-            alert('아직 열람가능 전 입니다.');
-        }
-    </script>
-
 </head>
 <body>
     <header>
@@ -108,19 +79,12 @@
         <div class="inner">
             <img src="images/pho6.jpg">
         </div>
-        
         </div>
     </div>
     <button class="버튼1">1</button>
     <button class="버튼2">2</button>
     <button class="버튼3">3</button>
 </section>
-<section2>
-    <div class="box">회원모집<button onclick="button()">열람</button><p>치즈낙서장 | 원소... | 20.11.02 | 75</p></div>
-    <div class="box">카페회칙<button onclick="button()">열람</button><p>치즈낙서장 | 원소... | 20.11.02 | 75</p></div>
-    <div class="box">귀여운 치즈<button onclick="button()">열람</button><p>치즈낙서장 | 원소... | 20.11.02 | 75</p></div>
-    <div class="box">그만하고 싶다<button onclick="button()">열람</button><p>치즈낙서장 | 원소... | 20.11.02 | 75</p></div>
-    <div class="box">눈 아파요<button onclick="button()">열람</button><p>치즈낙서장 | 원소... | 20.11.02 | 75</p></div>
-</section2>
+<a href="page2_1.html">더보기</a>
 </body>
 </html>
